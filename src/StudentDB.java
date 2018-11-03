@@ -14,7 +14,7 @@ public class StudentDB {
             // connecting to db stuff
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Connecting to db...");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentDB?serverTimezone=UTC", "root", "mei");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentDB?serverTimezone=UTC", "root", "password");
             System.out.println(("Connect to db successfully!"));
         } catch (Exception e) {
             System.out.println("Error connecting to db:");
